@@ -38,8 +38,6 @@ The Jupyter notebook is available here:
 I read the dataset and started to explore it. I used info() to see what columns and data types is each column
 ![Screenshot](./images/image00.png)
 
-This is by price:
-
 I plotted the count plot of classes ( 0 is bengin and 1 is malignant) 
 ![Screenshot](./images/image01.png)
 
@@ -61,9 +59,9 @@ I found the correlation among features and target. The following fours features 
 ![Screenshot](./images/image04.png)
 
 
-I divided the datset into training and test set.
+I divided the datset into training and test sets.
 
-I used a pipeline with polynomial features and linear regression. I plotted the MSE for traiing and test sets vs. degree of the polynomial.
+I used a pipeline with polynomial features and linear regression. I plotted the MSE for training and test sets vs. degree of the polynomial.
 I found that degree=2  yeild the lowest test MSE
 
 ![Screenshot](./images/image05.png)
@@ -111,7 +109,7 @@ MSE is:  0.05
 
 Best param: {'ridge__alpha': 28.828282828282827}
 
-                  Feature name  Ridge coeff
+                Feature name  Ridge coeff
 
 5                  Bare Nuclei     0.157969
 
@@ -129,7 +127,8 @@ Best param: {'ridge__alpha': 28.828282828282827}
 
 8                      Mitoses     0.009651
 
-4  Single Epithelial Cell Size     0.004428
+4 Single Epithelial Cell Size     0.004428
+
 --------------------------------------
 Bare Nuclei 0.233 +/- 0.017
 
@@ -371,6 +370,8 @@ I summairzed all results from different supervised and unsupervised ML models. a
 From these results it show that Knn and SVC are have the highest score while the lowest fit time.
 
 # Conclusions 
-The classification goal is to predict if the breast cancer is benign or malignant
+The classification goal is to predict if the breast cancer is benign or malignant.
 
 WoW!. I found that the Decision tree classifier and SVC provide the best accuracy of 0.95 and 0.98 respectively.
+
+The following three features are the top most features to determine whether a cancer is benign or malignant.
