@@ -13,9 +13,9 @@ The following features are collected for each cell nucleus:
 6. Single Epithelial Cell Size   1 - 10
 7. Bare Nuclei                   1 - 10
 8. Bland Chromatin               1 - 10
-9. Normal Nucleoli                1 - 10
-10. Mitoses                       1 - 10
-11. Class: 		                 (2 for benign, 4 for malignant)
+9. Normal Nucleoli               1 - 10
+10. Mitoses                      1 - 10
+11. Class: 		                    (0 for benign, 1 for malignant)
 
 ## Dataset
 A high-quality dataset from a university medical hospital is used and will come from the UCI Machine Learning repository.
