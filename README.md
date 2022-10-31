@@ -32,36 +32,11 @@ Breast cancer is a dangerous disease with a high morbidity and mortality rate. O
 ## Deliverables
 
 The Jupyter notebook is available here:
-[Jupyter Notebook](https://github.com/hossamfattah/capstone/blob/b995b7f1bee9831b9a01c05bb7d96ce8f670f6ff/MyWorkF.ipynb)
+[Jupyter Notebook](https://github.com/hossamfattah/capstone/blob/master/MyWorkF.ipynb)
 
 ## Discussion
 I read the dataset and started to explore it. I used info() to see what columns and data types is each column
-
- ###   Column                     Non-Null Count  Dtype 
----  ------                       --------------  ----- 
- 0  Clump Thickness               699 non-null    int64 
-
- 1   Uniformity of Cell Size      699 non-null    int64 
-
- 2   Uniformity of Cell Shape     699 non-null    int64 
-
- 3   arginal Adhesion             699 non-null    int64 
-
- 4   Single Epithelial Cell Size  699 non-null    int64 
-
- 5   Bare Nuclei                  699 non-null    object
-
- 6   Bland Chromatin              699 non-null    int64 
-
- 7   Normal Nucleoli              699 non-null    int64 
-
- 8   Mitoses                      699 non-null    int64 
-
- 9   Class                        699 non-null    int64 
-
-
- 
-
+![Screenshot](./images/image00.png)
 
 This is by price:
 
