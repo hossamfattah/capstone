@@ -38,14 +38,17 @@ The Jupyter notebook is available here:
 I read the dataset and started to explore it. I used info() to see what columns and data types is each column
 ![Screenshot](./images/image00.png)
 
-I plotted the count plot of classes ( 0 is bengin and 1 is malignant) 
+I plotted the count plot of classes ( 0 is bengin and 1 is malignant).
+
 ![Screenshot](./images/image01.png)
 
-I plotted the heatmap coufor Class vs, "Clump Thickness" ( 0 is bengin and 1 is malignant) 
+I plotted the heatmap coufor Class vs, "Clump Thickness" ( 0 is bengin and 1 is malignant).
+
 ![Screenshot](./images/image02.png)
 
 
-I plotted the histogram for all features and target ( 0 is bengin and 1 is malignant) 
+I plotted the histogram for all features and target ( 0 is bengin and 1 is malignant).
+
 ![Screenshot](./images/image03.png)
 
 I found the correlation among features and target. The following fours features are the top most important four features that influnce whether the cancer is bengin or malignant
@@ -109,7 +112,7 @@ MSE is:  0.05
 
 Best param: {'ridge__alpha': 28.828282828282827}
 
-                Feature name  Ridge coeff
+                  Feature name     Ridge coeff
 
 5                  Bare Nuclei     0.157969
 
@@ -198,18 +201,17 @@ arginal Adhesion  0.000 +/- 0.000
 
 
 
-I used clustering model to classify data. I used two fetaures, 'Bare Nuclei','Clump Thickness'. Clustering is visible based on these two features
+I used clustering model to classify data. I used two fetaures, 'Bare Nuclei','Clump Thickness'. Clustering is visible based on these two features.
 
 ![Screenshot](./images/image06.png)
 
-I repeated clustering model with two features, 'Uniformity of Cell Shape','Uniformity of Cell Size'. Clustering is visible based on these two features
+I repeated clustering model with two features, 'Uniformity of Cell Shape','Uniformity of Cell Size'. Clustering is visible based on these two features.
 
 ![Screenshot](./images/image07.png)
 
 
 
-I used a pipeline with StandardScaler and KNeighborsClassifier. I ran a GridSearchCV to final optimal parameters for this pipeline. The following are scores, best n_neighbors, and classification report.
-I also plotted RoC
+I used a pipeline with StandardScaler and KNeighborsClassifier. I ran a GridSearchCV to final optimal parameters for this pipeline. The following are scores, best n_neighbors, and classification report. I also plotted RoC.
 
 Accuracy score is:  0.95
 
@@ -224,9 +226,8 @@ The best n_neighbors is:  9.00
                  precision    recall  f1-score   support
 
       Benign       0.94       0.99       0.96        103
-  
-   Malignant       0.98       0.90       0.94         68
-
+      
+      Malignant    0.98       0.90       0.94         68
 
     accuracy                           0.95        171
 
@@ -260,9 +261,8 @@ The best C is:  0.01
               precision    recall  f1-score   support
 
       Benign       0.89      0.99      0.94       103
-
-   Malignant       0.98      0.81      0.89        68
-
+      
+      Malignant       0.98      0.81      0.89        68
 
     accuracy                           0.92       171
 
@@ -316,9 +316,8 @@ The best score is: 0.964820102798401
 
 
       Benign       0.96      0.98      0.97       103
-
-   Malignant       0.97      0.94      0.96        68
-
+      
+      Malignant       0.97      0.94      0.96        68
 
     accuracy                           0.96       171
 
@@ -330,8 +329,6 @@ weighted avg       0.97      0.96      0.96       171
 
 
 I used a pipeline with SVC. I ran a GridSearchCV to final optimal parameters for this pipeline. The following are scores, best parameters, and classification report.
-I also plotted RoC
-
 
 Accuracy score is:  0.95
 
@@ -349,9 +346,8 @@ The best score is: 0.9687607081667619
 
 
       Benign       0.94      0.98      0.96       103
-
-   Malignant       0.97      0.90      0.93        68
-
+      
+      Malignant       0.97      0.90      0.93        68
 
     accuracy                           0.95       171
 
@@ -360,18 +356,26 @@ The best score is: 0.9687607081667619
 weighted avg       0.95      0.95      0.95       171
 
 
-I summairzed all results from different supervised and unsupervised ML models. as in this Table
+I summarized all results from different supervised and unsupervised ML models as in this Table:
 
 ![Screenshot](./images/image11b.png)
 
 ![Screenshot](./images/image12.png)
 
 
-From these results it show that Knn and SVC are have the highest score while the lowest fit time.
+From these results, they show that Knn and SVC have the highest score while the lowest fit time.
 
 # Conclusions 
 The classification goal is to predict if the breast cancer is benign or malignant.
 
 WoW!. I found that the Decision tree classifier and SVC provide the best accuracy of 0.95 and 0.98 respectively.
 
-The following three features are the top most features to determine whether a cancer is benign or malignant.
+The following four features are the top most important features to determine whether a cancer is benign or malignant:
+
+Bare Nuclei-
+
+-Uniformity of Cell Size
+
+-Clump Thickness
+
+-Uniformity of Cell Shape
