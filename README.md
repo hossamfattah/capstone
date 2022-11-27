@@ -373,6 +373,7 @@ I summarized all results from different supervised and unsupervised ML models as
 
 ![Screenshot](./images/image11b.png)
 
+![Screenshot](./images/image13.png)
 
 
 From these results, they show that Knn and SVC have the highest score while the lowest fit time.
