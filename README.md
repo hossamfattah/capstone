@@ -1,5 +1,8 @@
 # Diagnostic of Breast Cancer. Does the diagnostic indicates benign or malignant ?
 
+## Author
+Hossam Fattah
+
 ## Executive summary
 The purpose of this machine learning project is to diagnose breast cancer from a Fine Needle Aspiration (FNA) of a breast mass. Ten assessed characteristics of an FNA sample relevant to diagnosis is used to predict whether there is a breast cancer or not. A high-quality dataset is used which contains different features for diagnosing breast cancer.
 
@@ -17,7 +20,7 @@ The following features are collected for each cell nucleus:
 10. Mitoses                      1 - 10
 11. Class: 		                    (0 for benign, 1 for malignant)
 
-## Dataset
+## Datasource and Dataset
 A high-quality dataset from a university medical hospital is used and will come from the UCI Machine Learning repository.
 Question to answer
 To predict based on a breast cancer sample whether the breast cancer is malignant or benign.
@@ -25,6 +28,9 @@ To predict based on a breast cancer sample whether the breast cancer is malignan
 ## Methodology
 Supervised and unsupervised learning methods will be used; includes but not limited to: K-nearest neighbors, logistic regression, decision trees, and support vector machines)
 I will be using a realistic and high-quality dataset and data analysis to investigate the data, using different ML models, and compare how to predict the breast cancer, whether it is malignant or benign, with maximum accuracy.
+
+## Research Question
+Does the breast cancer diagnostic indicates benign or malignant ?
 
 ## Importance of this Predictive ML
 Breast cancer is a dangerous disease with a high morbidity and mortality rate. One of the most important aspects in breast cancer treatment is getting an accurate diagnosis. Machine-learning (ML) techniques can help doctors in making diagnosis decisions. We will develop an accurate ML model to help health care professional and patient in early diagnostics of breast cancer and early treatment.
@@ -34,7 +40,14 @@ Breast cancer is a dangerous disease with a high morbidity and mortality rate. O
 The Jupyter notebook is available here:
 [Jupyter Notebook](https://github.com/hossamfattah/capstone/blob/master/MyWorkF.ipynb)
 
-## Discussion
+## Installation of Packages
+To run the above Jupyter notebook, make sure to install all necessary packages on your local machine.
+
+Especially, you need to install "kaleido" engine which requires the kaleido package,
+which can be installed using pip:
+    $ pip install -U kaleido
+
+## Discussion and Results
 I read the dataset and started to explore it. I used info() to see what columns and data types is each column
 ![Screenshot](./images/image00.png)
 
@@ -368,7 +381,7 @@ From these results, they show that Knn and SVC have the highest score while the 
 # Conclusions 
 The classification goal is to predict if the breast cancer is benign or malignant.
 
-WoW!. I found that the Decision tree classifier and SVC provide the best accuracy of 0.95 and 0.98 respectively.
+WoW!. I found that the Decision tree classifier, K-neighbors, and SVC are the top best models to use and they provide the best accuracy of 0.97, 0.95, 0.98 respectively. Their fit time is the lowest as well.
 
 The following four features are the top most important features to determine whether a cancer is benign or malignant:
 
