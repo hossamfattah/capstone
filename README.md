@@ -381,7 +381,7 @@ From these results, they show that Knn and SVC have the highest score while the 
 # Conclusions 
 The classification goal is to predict if the breast cancer is benign or malignant.
 
-WoW!. I found that the Decision tree classifier, K-neighbors, and SVC are the top best models to use and they provide the best accuracy of 0.97, 0.95, 0.98 respectively. Their fit time is the lowest as well.
+WoW!. I found that the Decision tree classifier, K-neighbors, and SVC are the top best models to use and they provide the best accuracy of 0.97, 0.95, 0.95 respectively. Their fit time is the lowest as well.
 
 The following four features are the top most important features to determine whether a cancer is benign or malignant:
 
